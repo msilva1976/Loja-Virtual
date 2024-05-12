@@ -359,6 +359,24 @@ ul{
 .linha2 select:focus{
     outline: none;
 }
+/*configuração da paginação*/
+
+.paginacao span{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid var(--cor-padrao);
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 50px;
+
+}
+.paginacao span:hover{
+    background: var(--cor-padrao);
+    color: var(--cor-fonte);
+}
 
 /*---------------menu celular tela 600------------*/
 
