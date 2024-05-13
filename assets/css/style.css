@@ -341,10 +341,11 @@ ul{
 /*---------------listagem de produtos-------------*/
 
 .novoMenu nav ul li a{
-    color: var(--cor-fonte);
+   color: var(--cor-fonte-corpo);
 
 }
 .novoMenu{
+   
     box-shadow: 0 2px 0 0 rgba(0,0,0, 0.1);
 }
 .linha2{
@@ -359,6 +360,108 @@ ul{
 .linha2 select:focus{
     outline: none;
 }
+/*configuração da paginação*/
+
+.paginacao span{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid var(--cor-padrao);
+    text-align: center;
+    line-height: 40px;
+    margin-left: 10px;
+    cursor: pointer;
+    margin-bottom: 50px;
+
+}
+.paginacao span:hover{
+    background: var(--cor-padrao);
+    color: var(--cor-fonte);
+}
+/*----------------------detalhes do produtos------*/
+
+.ver-produto{
+    margin-top: 40px;
+
+}
+.ver-produto .col-2 img{
+    width: 100%;
+    padding: 0;
+
+}
+.ver-produto #produtoimg{
+    width: 600px;
+    height: 450px;
+    object-fit: cover;
+    object-position: top;
+}
+.ver-produto .col-2{
+    padding: 15px;
+}
+.ver-produto h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+.ver-produto select{
+    
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid var(--cor-fonte-p);
+    border-radius: 5px ;
+}
+.ver-produto select:focus{
+    outline: none;
+}
+.ver-produto input{
+    width: 50px;
+    height: 40px;
+    margin-right: 10px;
+    text-align: center;
+    padding-left: 5px;
+    font-size: 19px;
+    font-weight: bold;
+    border: 1px solid var(--cor-fonte-p);
+    border-radius: 5px;
+}
+.ver-produto input:focus{
+    outline: none;
+}
+.ver-produto .btn{
+    border: none;
+    cursor: pointer;
+    height: 43px;
+}
+.ver-produto ion-icon{
+    width: 20px;
+    height: 20px;
+    
+}
+.ver-produto button{
+    margin-top: 10px;
+    border-radius: 5px;   
+}
+.ver-produto .btn:hover{
+    background-color: var(--cor-btn-hover);
+}
+.ver-produto p{
+    font-size: 13px;
+}
+.ver-produto a{
+    border-radius: 5px;   
+    padding-top: 12px;
+    
+}
+.img-linha{
+    display: flex;
+    justify-content: space-between;
+}
+.img-col{
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
 
 /*---------------menu celular tela 600------------*/
 
@@ -381,12 +484,23 @@ ul{
       .col-4 p{
         font-size: 24px;
       }
-
-    }
-    .novoMenu nav ul li a{
+      .novoMenu nav ul li a{
         color: var(--cor-fonte);
     
     }
+    .ver-produto .col-2{
+        margin: 20px;
+    }
+    .ver-produto .linha{
+        text-align: left;
+    }
+    .ver-produto h1{
+        font-size: 26px;
+        line-height: 26px;
+    }
+
+}
+   
 
 
 
