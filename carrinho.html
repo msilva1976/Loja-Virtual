@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Loja Virtual - Carrinho </title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <!--inicio banner da loja-->
+    <!--https://www.youtube.com/watch?v=182CKKctxKA&list=PLGFwuV_B-U2UftnGC6-_Uj803_YbM4fyS&index=2-->
+
+    <div class="novoMenu">
+        <!--inicio da loja-->
+        <div class="container">
+            <!--inicio navegação topo da loja-->
+            <div class="navbar">
+
+                <div class="logo">
+                    <img src="./assets/img/logo4.png" alt="Joce" width="125px">
+
+                </div>
+                <!--menu de nvagação-->
+                <nav>
+                    <ul id="MenuItens">
+                        <li><a href="./index.html">Inicio</a></li>
+                        <li><a href="./produtos.html">Produtos</a></li>
+                        <li><a href="./Empresa.html">Empresa</a></li>
+                        <li><a href="./Contato.html">Contatos</a></li>
+                        <li><a href="./Minha conta.html">Minha Conta</a></li>
+                    </ul>
+                </nav>
+                <!--fim menu de nvagação-->
+                <a href="./carrinho.html" title=""><img src="./assets/img/carrinho2.png" alt="" width="30px" height="30px"></a>
+                
+                <img src="./assets/img/menu.png" alt="" class="menu-celular" onclick="menucelular()">
+            </div>
+            <!--fim navegação topo da loja-->
+        </div>
+        <!--final da loja-->
+    </div>
+    <!--fim banner da loja-->
+
+    <!--incio carrinho de compras-->
+
+        <div class="corpo-categorias carrinho-compras">
+            <!--inicio tabela-->
+            <table>
+                <tr>
+                    <th>Produdo</th>
+                    <th>Quantidade</th>
+                    <th>Valor</th>
+                </tr>
+                <!--item 1 do carrinho-->
+                <tr>
+                    <td>
+                        <div class="info-carrinho">
+                            <img src="./assets/img/carrinho-1.jpg" alt="">
+                            <div>
+                                <p>curso</p>
+                                <small>valor:777</small>
+                                <br>
+                                <a href=""title>remover</a>
+                            </div>
+                        </div>carrinho
+                    </td>
+                    <td>
+                        <form action="" method="post">
+                            <input type="number" value="1">
+                        </form>
+                    </td>
+                    <td>799</td>
+                </tr>
+                <!--fim 2 do carrinho-->
+
+                <!--item 2 do carrinho-->
+                <tr>
+                    <td>
+                        <div class="info-carrinho">
+                            <img src="./assets/img/carrinho-2.jpg" alt="">
+                            <div>
+                                <p>curso</p>
+                                <small>valor:777</small>
+                                <br>
+                                <a href=""title>remover</a>
+                            </div>
+                        </div>carrinho
+                    </td>
+                    <td>
+                        <form action="" method="post">
+                            <input type="number" value="1">
+                        </form>
+                    </td>
+                    <td>799</td>
+                </tr> 
+                <!--fim 2 do carrinho-->
+
+                <!--item 3 do carrinho-->                   
+                <tr>
+                    <td>
+                        <div class="info-carrinho">
+                            <img src="./assets/img/carrinho-3.jpg" alt="">
+                            <div>
+                                <p>curso</p>
+                                <small>valor:777</small>
+                                <br>
+                                <a href=""title>remover</a>
+                            </div>
+                        </div>carrinho
+                    </td>
+                    <td>
+                        <form action="" method="post">
+                            <input type="number" value="1">
+                        </form>
+                    </td>
+                    <td>799</td>
+                </tr>
+                <!--item 1 do carrinho-->
+
+            </table>
+            <!--inicio valor total de compra-->
+            <div class="valorTotal">
+                <table>
+                    <tr>
+                        <td>Sub-Total</td>
+                        <td>R$ 700</td>
+                    </tr>
+                    <tr>
+                        <td>Frete</td>
+                        <td>R$ 77</td>
+                    </tr>
+                    <tr>
+                        <td>Total</td>
+                        <td>R$ 777</td>
+                    </tr>
+                </table>
+            </div>
+            <!--fim valor total de compra-->
+            <!--fim tabela-->
+        </div>
+    <!--fim carrinho de compras-->
+
+    <!--inicio roda pe-->
+    <footer class="rodape">
+        <div class="container">
+            <div class="linha">
+                <div class="rodape-col-1">
+                    <h3>Baixe o nosso app</h3>
+                    <p>Baixe nosso aplicativo nas melhores <br>plataformas</p>
+                    <div class="app-logo">
+                        <img src="./assets/img/google.png" alt="">
+                        <img src="./assets/img/apple.png" alt="">
+                    </div>
+
+                </div>
+                <div class="rodape-col-2">
+                    <img src="./assets/img/logo3.png" alt="">
+                    <p>Joias para toda a vida</p>
+                </div>
+
+                <div class="rodape-col-3">
+                    <h3>Mais informações</h3>
+                    <ul>
+                        <li>Cupons</li>
+                        <li>Blog</li>
+                        <li>Politica de Privacidade</li>
+                        <li>Contatos</li>
+                    </ul>
+                </div>
+
+                <div class="rodape-col-4">
+                    <h3>Rede Sociais</h3>
+                    <ul>
+                        <a href="http://www.facebook.com.br"></a>
+                        <li><ion-icon name="logo-facebook"></ion-icon><a href="http://www.facebook.com.br "
+                                target="_blank"> Facebook </a></li>
+                        <li><ion-icon name="logo-instagram"></ion-icon><a href="http://www.instagram.com.br"
+                                target="_blank"> Instagram </a></li>
+                        <li><ion-icon name="logo-youtube"></ion-icon> <a href="http://www.youtube.com.br"
+                                target="_blank"> YouTube</a></li>
+                        <li><ion-icon name="logo-twitter"></ion-icon><a href="http://twitter.com" target="_blank">
+                                Tweet</a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <p class="direitos">&#169; Todos os direitos reservados</p>
+        </div>
+    </footer>
+    <!--inicio roda pe-->
+
+
+
+
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="./assets/javaScript/app.js"></script>
+</body>
+
+</html>

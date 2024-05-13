@@ -39,8 +39,43 @@
 
             </div>
             <!--fim navegação topo da loja-->
+        </div>
+    </div>
 
-            <!--inicio texto do baner da loja-->
+    <!--inicio minha conta-->
+    <div class="minhaConta">
+        <div class="container">
+            <div class="linha">
+                <div class="col-2">
+                    <img src="./assets/img/banner-1.png" width="100%" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="formulario">
+                        <div class="btnForm">
+                            <span onclick="Entrar()">Entrar</span>
+                            <span onclick="Cadastro()">Cadastro</span>
+                            <hr id="Indicador">
+                        </div>
+                        <form action="" method="post" id="EntrarPainel">
+                            <input type="email" name="email" id="" placeholder="E-mail de Acesso">
+                            <input type="password" name="senha" id="" placeholder="Senha">
+                            <button type="submit" name="sendEntrar" class="btn">Entrar</button>
+                            <a href="" title="">Esqueceu Sua Senha?</a>
+                        </form>
+                        <form action="" method="post" id="CadastroSite">
+                            <input type="text" name="nome" id="" placeholder="Nome Completo">
+                            <input type="password" name="senha" id="" placeholder="Senha">
+                            <input type="email" name="email" id="" placeholder="E-mail de Acesso">
+                            <button type="submit" name="sendCad" class="btn">Cadastre se</button>
+                            
+                        </form>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!--final minha conta-->    
             
     <!--inicio roda pe-->
     <footer class="rodape">
@@ -96,7 +131,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="./assets/javaScript/app.js"></script>
+    <script src="./assets/javaScript/login.js"></script>
 </body>
 
 </html>

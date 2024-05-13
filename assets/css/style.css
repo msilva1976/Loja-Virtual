@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 :root{
+    --cor-padrao3:#58d4f3;
     --cor-padrao2:#0a56e4;
     --cor-padrao-hover2:#a018df;
     --cor-padrao:#ff523b;
@@ -22,7 +23,7 @@ body{
 }
 
 .banner{
-    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+    background: radial-gradient(var(--cor-padrao2), var(--cor-padrao3));
 }
 .banner .linha{
     margin-top: 70px;
@@ -106,7 +107,8 @@ p{
     color: var(--cor-btn-fonte);
 }
 
-/*---------------categorias------------*/
+
+/*---------------------------------------------------------------------CATEGORIAS----------------------------------------------------------*/
 
 .categorias{
     margin: 70px 0;
@@ -158,7 +160,7 @@ p{
 }
 .titulo::after{
     content: '';
-    background-color: var(--cor-padrao);
+    background-color: var(--cor-padrao2);
     width: 80px;
     height: 5px;
     border-radius: 5px;
@@ -177,12 +179,12 @@ h4{
     font-size: 14px;
 }
 .classificacao{
-    color: var(--cor-padrao);
+    color: var(--cor-padrao2);
 }
-/*---------------ofertas------------*/
+/*---------------------------------------------------------------------OFERTAS----------------------------------------------------------*/
 
 .ofertas{
-    background: radial-gradient(var(--cor-padrao-hover), var(--cor-padrao));
+    background: radial-gradient(var(--cor-padrao2), var(--cor-padrao3));    
     margin-top: 80px;
     padding: 30px 0;
 }
@@ -192,7 +194,7 @@ h4{
 small{
     color: var(--cor-btn-fonte);
 }
-/*---------------depoimentos------------*/
+/*---------------------------------------------------------------------EPOIMENTOS----------------------------------------------------------*/
 .depoimentos{
     padding-top: 50px;
 }
@@ -210,11 +212,11 @@ small{
     width: 50px;
     border-radius: 50%;
     margin-top: 20px;
-    border: 2px solid var(--cor-padrao);
+    border: 2px solid var(--cor-padrao2);
 
 }
 .depoimento-icone{
-    color: var(--cor-padrao);
+    color: var(--cor-padrao2);
     font-size: 25px;
 }
 .col-3{
@@ -227,11 +229,9 @@ small{
     font-weight: 600;
     color: var(--cor-fonte-corpo);
 }
-.depoimentos .col-3 p{
 
-}
 
-/*---------------marcas------------*/
+/*---------------------------------------------------------------------MARCAS----------------------------------------------------------*/
 
 .marcas{
     margin: 100px auto;
@@ -249,7 +249,7 @@ small{
     filter: grayscale(0);
 }
 
-/*---------------rodapé------------*/
+/*---------------------------------------------------------------------RODA PE----------------------------------------------------------*/
 
 .rodape{
     background: var(--cor-btn-fonte);
@@ -310,8 +310,91 @@ ul{
     margin-left: 20px;
     display: none;
 }
+/*---------------------------------------------------------------------MINHA CONTA----------------------------------------------------------*/
 
-/*---------------menu celular------------*/
+.minhaConta{
+    padding: 50px 0 ;
+    background: radial-gradient(var(--cor-padrao2), var(--cor-padrao3))
+}
+.formulario{
+    position: relative;
+    padding: 20px 0;
+    text-align: center;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    background-color: var(--cor-fonte);
+    box-shadow: 30px 0 20px 0 rgba(0,0,0,0.3);
+    overflow: hidden;
+   
+}
+
+.formulario span{
+    display: inline-block;
+    width: 100px;
+    padding: 0 10px;
+    font-weight: bold;
+    color: var(--cor-fonte-corpo);
+    cursor: pointer;
+}
+.btnForm{
+    display: inline-block;
+}
+.formulario form{
+    position: absolute;
+    top: 110px;
+    max-width: 300px;
+    padding: 0 20px;
+    transition: transform 1s;
+}
+.formulario input{
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+    padding: 0 10px;
+    border: 1px solid var(--cor-padrao2);
+    border-radius: 5px;
+
+}
+.formulario form input:focus{
+    outline: none;
+}
+.formulario form .btn{
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--cor-padrao2);
+    cursor: pointer;
+}
+.formulario form .btn:hover{
+    background-color: var(--cor-padrao3);    
+}
+.formulario form a{
+    font-size: 12px;
+    text-decoration: none;
+    color: var(--cor-fonte-corpo);
+}
+#EntrarPainel{
+    left:-300px;
+
+}
+#CadastroSite{
+    left: 0;
+}
+#Indicador{
+    width: 100px;
+    height: 3px;
+    border: none;
+    background: var(--cor-padrao2);
+    margin-top: 8px;
+    transform: translateX(100px);
+    transition: transform 1s;
+}
+
+
+
+/*---------------------------------------------------------------------MENU CELULAR----------------------------------------------------------*/
 @media only screen and (max-width:800px) {
     nav ul{
         position: absolute;
@@ -338,7 +421,7 @@ ul{
         cursor: pointer;
     }
 }
-/*---------------listagem de produtos-------------*/
+/*---------------------------------------------------------------------LISTAGEM DE PRODUTOS----------------------------------------------------------*/
 
 .novoMenu nav ul li a{
    color: var(--cor-fonte-corpo);
@@ -355,7 +438,7 @@ ul{
 }
 .linha2 select{
     padding: 5px;
-    border: 1px solid var(--cor-padrao);
+    border: 1px solid var(--cor-padrao2);
 }
 .linha2 select:focus{
     outline: none;
@@ -366,7 +449,7 @@ ul{
     width: 40px;
     height: 40px;
     display: inline-block;
-    border: 1px solid var(--cor-padrao);
+    border: 1px solid var(--cor-padrao2);
     text-align: center;
     line-height: 40px;
     margin-left: 10px;
@@ -375,10 +458,11 @@ ul{
 
 }
 .paginacao span:hover{
-    background: var(--cor-padrao);
+    background: var(--cor-padrao3);
     color: var(--cor-fonte);
 }
-/*----------------------detalhes do produtos------*/
+
+/*---------------------------------------------------------------------DETALHES DOS PRODUTOS----------------------------------------------------------*/
 
 .ver-produto{
     margin-top: 40px;
@@ -410,14 +494,16 @@ ul{
     padding: 10px;
     border: 1px solid var(--cor-fonte-p);
     border-radius: 5px ;
+    height: 42px;
+    
 }
 .ver-produto select:focus{
     outline: none;
 }
 .ver-produto input{
-    width: 50px;
+    width: 45px;
     height: 40px;
-    margin-right: 10px;
+    margin-right: 1px;
     text-align: center;
     padding-left: 5px;
     font-size: 19px;
@@ -431,7 +517,8 @@ ul{
 .ver-produto .btn{
     border: none;
     cursor: pointer;
-    height: 43px;
+    height: 42px;
+    margin-left: 1px;
 }
 .ver-produto ion-icon{
     width: 20px;
@@ -450,9 +537,9 @@ ul{
 }
 .ver-produto a{
     border-radius: 5px;   
-    padding-top: 12px;
-    
+    padding-top: 12px;   
 }
+
 .img-linha{
     display: flex;
     justify-content: space-between;
@@ -462,8 +549,64 @@ ul{
     cursor: pointer;
 }
 
+/*---------------------------------------------------------------------carrinho de compras----------------------------------------------------------*/
 
-/*---------------menu celular tela 600------------*/
+.carrinho-compras{
+    
+    margin: 80px auto;
+}
+table{
+    
+    width: 100%;
+    border-collapse: collapse;
+}
+.info-carrinho{
+    display: flex;
+    flex-wrap: wrap;
+}
+th{
+    background-color: var(--cor-padrao2);
+    color: var(--cor-fonte);
+    text-align: left;
+    font-weight: bold;
+    padding: 5px;
+}
+td{
+    padding: 10px 5px;
+}
+td input{
+    width: 40px ;
+    height: 30px;
+    padding: 5px;
+}
+td a{
+    color: var(--cor-padrao2);
+    font-size: 12px;
+}
+td img{
+    width: 80px;
+    height: 80px;
+    margin-right: 5px;
+}
+.valorTotal{
+    display: flex;
+    justify-content: flex-end;
+}
+.valorTotal table{
+    border-top: 3px solid var(--cor-padrao2);
+    width: 100%;
+    max-width: 53%;
+}
+td:last-child{
+    text-align: right;
+}
+th:last-child{
+    text-align: right;
+}
+
+
+
+/*---------------------------------------------------------------------MENU CELULAR TELA 600----------------------------------------------------------*/
 
 @media only screen and (max-width:600px) {
     
@@ -498,6 +641,10 @@ ul{
         font-size: 26px;
         line-height: 26px;
     }
+    .info-carrinho p{
+        display: none;
+    }
+
 
 }
    

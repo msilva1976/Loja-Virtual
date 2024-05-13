@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <!--inicio banner da loja-->
+       <!--inicio banner da loja-->
     <!--https://www.youtube.com/watch?v=182CKKctxKA&list=PLGFwuV_B-U2UftnGC6-_Uj803_YbM4fyS&index=2-->
 
     <div class="banner">
@@ -39,8 +39,38 @@
 
             </div>
             <!--fim navegação topo da loja-->
+        </div>
+    </div>
 
-            <!--inicio texto do baner da loja-->
+    <!--inicio minha conta-->
+    <div class="minhaConta">
+        <div class="container">
+            <div class="linha">
+                <div class="col-2">
+                    <img src="./assets/img/banner-1.png" width="100%" alt="">
+                </div>
+                <div class="col-2">
+                    <div class="formulario">
+                        <div class="btnForm">
+                           
+                            <span onclick="Cadastro()">Cadastro</span>
+                            
+                        </div>
+                       
+                        <form action="" method="post" id="CadastroSite">
+                            <input type="text" name="nome" id="" placeholder="Nome Completo">
+                            <input type="password" name="senha" id="" placeholder="Senha">
+                            <input type="email" name="email" id="" placeholder="E-mail de Acesso">
+                            <button type="submit" name="sendCad" class="btn">Cadastre se</button>
+                            
+                        </form>
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>  
+    <!--final minha conta-->    
             
     <!--inicio roda pe-->
     <footer class="rodape">
@@ -96,7 +126,7 @@
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <script src="./assets/javaScript/app.js"></script>
+    <script src="./assets/javaScript/login.js"></script>
 </body>
 
 </html>
